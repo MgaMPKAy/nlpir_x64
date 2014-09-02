@@ -4,10 +4,11 @@ require 'fiddle'
 require 'fiddle/struct'
 require 'fiddle/import'
 require 'fileutils'   
-include Fiddle::CParser
-include Fiddle::Importer
 
 module Nlpir
+  extend Fiddle::CParser
+  extend Fiddle::Importer
+
   NLPIR_FALSE = 0
   NLPIR_TRUE = 1
   POS_MAP_NUMBER = 4
